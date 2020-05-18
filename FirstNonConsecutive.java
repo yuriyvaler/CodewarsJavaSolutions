@@ -2,16 +2,16 @@
 class FirstNonConsecutive
 {
     static Integer find(final int[] array)
-{
+    {
     Integer result = null;
     for (int i = 1; i < array.length; i++)
-{
-    if (array[i] - 1 != array[i - 1])
-{
-    result = array[i];
-    break;
-}
-}
-return result;
-}
+    {
+         if (array[i] - 1 != array[i - 1])
+             {
+            result = array[i];
+            break;
+            }
+    }
+    return result;
+    }
 }
